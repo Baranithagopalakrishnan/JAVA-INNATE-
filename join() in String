@@ -1,0 +1,7 @@
+public class JoinExample {
+    public static void main(String[] args) {
+        String date = String.join("/", "2026", "06", "10");
+        System.out.println("Joined Date: " + date);
+    }
+}
+// Output: Joined Date: 2026/06/10
