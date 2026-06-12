@@ -1,0 +1,18 @@
+import java.util.HashMap;
+import java.util.Scanner;
+
+public class Netflix {
+    public static void main(String[] args) {
+        HashMap<String, Integer> fruits = new HashMap<>();
+        Scanner sc = new Scanner(System.in);
+        fruits.put("Apple", 10);
+        fruits.put("Banana", 20);
+        System.out.println("Added: " + fruits);
+        System.out.println("Apple count: " + fruits.get("Apple"));
+        fruits.put("Apple", 50); 
+        System.out.println("Updated Apple: " + fruits.get("Apple"));
+        fruits.remove("Banana");
+        System.out.println("Final Inventory: " + fruits);
+        sc.close();
+    }
+}
