@@ -1,0 +1,21 @@
+public class Main{
+    public static void main(String[] args){
+        int[] n = {1,5,7,-1,5,3};
+        int target = 6;
+        for(int i =0;i<n.length;i++){
+            // Skip duplicate outer loop elements to prevent duplicate pairs
+            if (i > 0 && n[i] == n[i - 1]) continue; 
+            for(int j=i+1;j<n.length;j++){
+                int sum = n[i]+n[j];
+                if(sum==target){
+                    if (n[j] < 0) {
+                        System.out.println(n[i] + "" + n[j] + "=" + sum);
+                    } else {
+                        System.out.println(n[i] + "+" + n[j] + "=" + sum);
+                    }
+                    break; 
+                }
+            }
+        }
+    }
+}
