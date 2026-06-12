@@ -1,0 +1,51 @@
+import java.util.Scanner;
+
+public class Pangram {
+
+    public static boolean isPangram(String s) {
+        boolean[] seen = new boolean[26];
+        int count = 0;
+
+        for (int i = 0; i < s.length(); i++) {
+            char c = s.charAt(i);
+
+            // Handle uppercase letters
+            if (c >= 65 && c <= 90) {
+                int index = c - 65;
+                if (!seen[index]) {
+                    seen[index] = true;
+                    count++;
+                }
+            } 
+            // Handle lowercase letters
+            else if (c >= 97 && c <= 122) {
+                int index = c - 97;
+                if (!seen[index]) {
+                    seen[index] = true;
+                    count++;
+                }
+            }
+
+            // Early exit if all 26 letters are found
+            if (count == 26) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a string: ");
+        String text = sc.nextLine();
+
+        // Check if the input text is a pangram
+        if (isPangram(text)) {
+            System.out.println("The string is a pangram.");
+        } else {
+            System.out.println("The string is not a pangram.");
+        }
+        
+        sc.close();
+    }
+}
