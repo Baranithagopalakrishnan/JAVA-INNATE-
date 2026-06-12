@@ -1,0 +1,8 @@
+public class ReplaceFirstExample {
+    public static void main(String[] args) {
+        String text = "apple apple apple";
+        String updated = text.replaceFirst("apple", "orange");
+        System.out.println("Updated text: " + updated);
+    }
+}
+// Output: Updated text: orange apple apple
