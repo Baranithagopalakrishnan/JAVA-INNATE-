@@ -1,0 +1,13 @@
+import java.util.ArrayList;
+import java.util.HashMap;
+
+public class Main {
+    public static void main(String[] args) {
+        HashMap<String, String> map = new HashMap<>();
+        map.put("Iphone", "16 Pro");
+        map.put("Samsung", "S24");
+        
+        ArrayList<String> values = new ArrayList<>(map.values());
+        System.out.println("All Values: " + values);
+    }
+}
