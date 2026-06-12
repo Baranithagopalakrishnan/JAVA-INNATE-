@@ -1,0 +1,8 @@
+public class CompareToExample {
+    public static void main(String[] args) {
+        String str1 = "Apple", str2 = "Banana";
+        int diff = str1.compareTo(str2);
+        System.out.println("Alphabetical difference: " + diff);
+    }
+}
+// Output: Alphabetical difference: -1
