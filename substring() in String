@@ -1,0 +1,8 @@
+public class SubstringExample {
+    public static void main(String[] args) {
+        String text = "HelloWorld";
+        String part = text.substring(0, 5);
+        System.out.println("Extracted text: " + part);
+    }
+}
+// Output: Extracted text: Hello
