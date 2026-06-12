@@ -1,0 +1,8 @@
+public class StartsWithExample {
+    public static void main(String[] args) {
+        String text = "SpringBoot";
+        boolean check = text.startsWith("Spring");
+        System.out.println("Starts with 'Spring'?: " + check);
+    }
+}
+// Output: Starts with 'Spring'?: true
