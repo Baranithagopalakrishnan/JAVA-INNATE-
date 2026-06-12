@@ -1,0 +1,8 @@
+public class IsEmptyExample {
+    public static void main(String[] args) {
+        String str = "";
+        boolean empty = str.isEmpty();
+        System.out.println("Is text empty?: " + empty);
+    }
+}
+// Output: Is text empty?: true
