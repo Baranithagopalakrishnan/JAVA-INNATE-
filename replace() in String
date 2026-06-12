@@ -1,0 +1,8 @@
+public class ReplaceExample {
+    public static void main(String[] args) {
+        String text = "cat, bat, rat";
+        String updated = text.replace("at", "ow");
+        System.out.println("Replaced text: " + updated);
+    }
+}
+// Output: Replaced text: cow, bow, row
