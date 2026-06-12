@@ -1,0 +1,13 @@
+import java.util.ArrayList;
+import java.util.HashMap;
+
+public class Main {
+    public static void main(String[] args) {
+        HashMap<String, String> map1 = new HashMap<>();
+        map1.put("Iphone", "16 Pro");
+
+        HashMap<String, String> map2 = new HashMap<>();
+        map2.putAll(map1);
+        System.out.println(map2);
+    }
+}
