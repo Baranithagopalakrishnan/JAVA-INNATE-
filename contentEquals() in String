@@ -1,0 +1,8 @@
+public class ContentEqualsExample {
+    public static void main(String[] args) {
+        String text = "Java";
+        StringBuilder sb = new StringBuilder("Java");
+        System.out.println("Content matches?: " + text.contentEquals(sb));
+    }
+}
+// Output: Content matches?: true
