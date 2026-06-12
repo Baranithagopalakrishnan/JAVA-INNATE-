@@ -1,0 +1,8 @@
+public class EndsWithExample {
+    public static void main(String[] args) {
+        String file = "document.pdf";
+        boolean isPdf = file.endsWith(".pdf");
+        System.out.println("Is a PDF file?: " + isPdf);
+    }
+}
+// Output: Is a PDF file?: true
