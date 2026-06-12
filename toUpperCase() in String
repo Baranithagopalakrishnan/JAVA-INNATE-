@@ -1,0 +1,8 @@
+public class ToUpperCaseExample {
+    public static void main(String[] args) {
+        String text = "hello";
+        String upper = text.toUpperCase();
+        System.out.println("Upper: " + upper);
+    }
+}
+// Output: Upper: HELLO
