@@ -1,0 +1,8 @@
+public class ToLowerCaseExample {
+    public static void main(String[] args) {
+        String text = "CODE";
+        String lower = text.toLowerCase();
+        System.out.println("Lower: " + lower);
+    }
+}
+// Output: Lower: code
