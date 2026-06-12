@@ -1,0 +1,8 @@
+public class MatchesExample {
+    public static void main(String[] args) {
+        String text = "12345";
+        boolean isOnlyDigits = text.matches("\\d+");
+        System.out.println("Contains only numbers?: " + isOnlyDigits);
+    }
+}
+// Output: Contains only numbers?: true
