@@ -1,0 +1,11 @@
+import java.util.ArrayList;
+import java.util.HashMap;
+
+public class Main {
+    public static void main(String[] args) {
+        HashMap<String, String> map = new HashMap<>();
+        
+        map.computeIfAbsent("Iphone", key -> "16 Pro");
+        System.out.println(map);
+    }
+}
