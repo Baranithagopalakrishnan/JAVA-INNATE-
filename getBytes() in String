@@ -1,0 +1,8 @@
+public class GetBytesExample {
+    public static void main(String[] args) {
+        String text = "ABC";
+        byte[] bytes = text.getBytes();
+        System.out.println("Byte at index 0: " + bytes[0]);
+    }
+}
+// Output: Byte at index 0: 65
