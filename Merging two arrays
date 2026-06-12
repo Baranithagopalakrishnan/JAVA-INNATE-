@@ -1,0 +1,18 @@
+import java.util.Arrays;
+
+public class MergeArrays {
+    public static void main(String[] args) {
+        int[] array1 = {1, 2, 3};
+        int[] array2 = {4, 5, 6};
+
+        // Create a new array with the combined length
+        int[] result = new int[array1.length + array2.length];
+
+        // Copy the first array into result starting at index 0
+        System.arraycopy(array1, 0, result, 0, array1.length);
+        // Copy the second array into result starting right after the first array
+        System.arraycopy(array2, 0, result, array1.length, array2.length);
+
+        System.out.println(Arrays.toString(result)); // [1, 2, 3, 4, 5, 6]
+    }
+}
