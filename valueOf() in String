@@ -1,0 +1,8 @@
+public class ValueOfExample {
+    public static void main(String[] args) {
+        int number = 456;
+        String str = String.valueOf(number);
+        System.out.println("Converted String: " + str);
+    }
+}
+// Output: Converted String: 456
