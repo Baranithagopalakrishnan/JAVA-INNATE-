@@ -1,0 +1,8 @@
+public class ToCharArrayExample {
+    public static void main(String[] args) {
+        String text = "Hi";
+        char[] chars = text.toCharArray();
+        System.out.println("First element: " + chars[0]);
+    }
+}
+// Output: First element: H
